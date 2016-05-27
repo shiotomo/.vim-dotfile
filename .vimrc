@@ -16,6 +16,7 @@ inoremap { {}<LEFT>
 inoremap [ []<LEFT>
 inoremap ( ()<LEFT>
 inoremap " ""<LEFT>
+inoremap ' ''<LEFT>
 inoremap jj <Esc>  
 nnoremap <silent><C-e> :NERDTreeToggle<CR>
 
