@@ -13,12 +13,18 @@ set cursorline
 set list
 set pastetoggle=<F12>
 
+augroup fileTypeIndent
+    autocmd!
+    autocmd BufNewFile,BufRead *.html setlocal tabstop=2 softtabstop=2 shiftwidth=2
+    autocmd BufNewFile,BufRead *.css setlocal tabstop=2 softtabstop=2 shiftwidth=2
+augroup END
+
 inoremap { {}<LEFT>  
 inoremap [ []<LEFT>
 inoremap ( ()<LEFT>
 inoremap " ""<LEFT>
 inoremap ' ''<LEFT>
-inoremap jj <Esc>  
+inoremap jj  <Esc> 
 nnoremap <silent><C-e> :NERDTreeToggle<CR>
 
 let NERDTreeShowHidden=1          "隠しファイルを表示する
