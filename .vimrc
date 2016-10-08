@@ -2,11 +2,11 @@ let NERDTreeShowHidden=1          "隠しファイルを表示する
 
 if has('vim_starting')
    " 初回起動時のみruntimepathにneobundleのパスを指定する
-   set runtimepath+=~/.vim/bundle/neobundle.vim/
+   set runtimepath+=~/.Dotfiles/.vim/bundle/neobundle.vim/
 endif
 
 " NeoBundleを初期化
-call neobundle#begin(expand('~/.vim/bundle/'))
+call neobundle#begin(expand('~/.Dotfiles/.vim/bundle/'))
 
 " インストールするプラグインをここに記述
 NeoBundle 'scrooloose/syntastic' 
@@ -41,6 +41,7 @@ call neobundle#end()
 set number                        "行番号を表示する
 set ruler                         "カーソルが何行目の何列目にあるか表示する 
 set tabstop=4                     "画面上でタブが占める幅 
+set softtabstop=4                 "tabで挿入される空白の量
 set shiftwidth=4                  "自動でインデントでずれる幅
 set expandtab                     "タブ入力を複数の空白入力に置き換える
 set showmatch                     "括弧の対応をハイライト
@@ -53,16 +54,18 @@ set cursorline
 set list
 set pastetoggle=<F12>
 
-helptags ~/.vim/.help/vimdoc-ja/doc/
-set runtimepath+=~/.vim/.help/vimdoc-ja
+helptags ~/.Dotfiles/.vim/.help/vimdoc-ja/doc/
+set runtimepath+=~/.Dotfiles/.vim/.help/vimdoc-ja
 set helplang=ja
 
+"html,css
 augroup fileTypeIndent
     autocmd!
     autocmd BufNewFile,BufRead *.html setlocal tabstop=2 softtabstop=2 shiftwidth=2
     autocmd BufNewFile,BufRead *.css setlocal tabstop=2 softtabstop=2 shiftwidth=2
 augroup END
 
+"ruby
 augroup fileTypeIndent
     autocmd!
     autocmd BufNewFile,BufRead *.rb setlocal tabstop=2 softtabstop=2 shiftwidth=2
@@ -92,4 +95,3 @@ try
 catch
   colorscheme desert
 endtry
-
