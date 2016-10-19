@@ -13,10 +13,13 @@ NeoBundle 'scrooloose/syntastic'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'MaxMEllon/molokai'
 NeoBundle 'tpope/vim-surround'
-"lightline----
 NeoBundle 'itchyny/lightline.vim'
 NeoBundle 'tpope/vim-fugitive'
-
+NeoBundle 'MaxMEllon/vim-tmng'
+NeoBundle 'plasticboy/vim-markdown'
+NeoBundle 'kannokanno/previm'
+NeoBundle 'tyru/open-browser.vim'
+NeoBundle 'rhysd/Shiba'
 let g:lightline = {
       \ 'colorscheme': 'default',
       \ 'active': {
@@ -95,3 +98,4 @@ try
 catch
   colorscheme desert
 endtry
+
