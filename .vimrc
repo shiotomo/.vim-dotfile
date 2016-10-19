@@ -19,7 +19,6 @@ NeoBundle 'MaxMEllon/vim-tmng'
 NeoBundle 'plasticboy/vim-markdown'
 NeoBundle 'kannokanno/previm'
 NeoBundle 'tyru/open-browser.vim'
-NeoBundle 'rhysd/Shiba'
 let g:lightline = {
       \ 'colorscheme': 'default',
       \ 'active': {
