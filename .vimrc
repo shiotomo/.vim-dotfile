@@ -24,6 +24,7 @@ NeoBundle 'bronson/vim-trailing-whitespace'
 NeoBundle 'othree/html5.vim'
 NeoBundle 'hail2u/vim-css3-syntax'
 NeoBundle 'jelera/vim-javascript-syntax'
+NeoBundle 'nobarudo/tender.vim'
 let g:lightline = {
       \ 'colorscheme': 'default',
       \ 'active': {
@@ -87,7 +88,10 @@ inoremap jj  <Esc>
 nnoremap <silent><C-e> :NERDTreeToggle<CR>
 nnoremap <silent>S :e ++enc=shift_jis<CR>
 nnoremap <silent>U :e ++enc=utf-8<CR>
-nnoremap .s :setlocal spell! spell?<CR>
+"<C-j>をEscの代わりに
+nnoremap <C-j><C-j> :noh<CR>
+inoremap <C-j> <Esc> 
+vnoremap <C-j> <Esc> 
 
 " ファイルタイプ別のプラグイン/インデントを有効にする
 filetype plugin indent on
@@ -101,12 +105,13 @@ syntax on
 set t_Co=256
 try
   colorscheme molokai
+"  colorscheme tender
   let g:molokai_original = 1
 catch
   colorscheme desert
 endtry
 
-"--------------------------------------------------
+"Test--------------------------------------------------
 highlight Pmenu ctermbg=4
 highlight PmenuSel ctermbg=1
 highlight PMenuSbar ctermbg=4
