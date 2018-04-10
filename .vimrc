@@ -13,7 +13,7 @@ set backspace=indent,eol,start    "BackSpaceを表示する
 set laststatus=2                  "ステータス行を表示
 set relativenumber
 set cursorline
-set list
+" set list
 set pastetoggle=<F12>
 
 helptags ~/.Dotfiles/.vim/.help/vimdoc-ja/doc/
