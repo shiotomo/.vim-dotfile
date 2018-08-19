@@ -16,10 +16,6 @@ set cursorline
 " set list
 set pastetoggle=<F12>
 
-helptags ~/.Dotfiles/.vim/.help/vimdoc-ja/doc/
-set runtimepath+=~/.Dotfiles/.vim/.help/vimdoc-ja
-set helplang=ja
-
 "html,css,ruby
 augroup fileTypeIndent
     autocmd!
