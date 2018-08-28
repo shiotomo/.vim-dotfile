@@ -29,7 +29,7 @@ inoremap [ []<LEFT>
 inoremap ( ()<LEFT>
 inoremap " ""<LEFT>
 inoremap ' ''<LEFT>
-inoremap jj  <Esc>
+inoremap jj  <Esc> `^
 nnoremap <silent>S :e ++enc=shift_jis<CR>
 nnoremap <silent>U :e ++enc=utf-8<CR>
 "<C-j>をEscの代わりに
